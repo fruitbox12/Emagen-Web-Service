@@ -1,0 +1,323 @@
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* particleground demo */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Bubbler One', sans-serif;
+  color: #000;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'Bubbler One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bubbler One'), local('BubblerOne'), url(../fonts/BubblerOne.woff) format('woff');
+}
+
+
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#intro {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  padding: 0 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.form-login {
+    background-color: #EDEDED;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+}
+
+h4 { 
+ border:0 solid #fff; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.wrapper {
+    text-align: center;
+    width: 1170px;
+}
+
+
+.btn-sky {
+color: #fff;
+background-color: #0bacd3;
+border-bottom:2px solid #098aa9;
+
+}
+
+#bs-example-navbar-collapse-1{
+text-align:center;
+}
+
+.btn-sky:hover,.btn-sky.active:focus, .btn-sky:focus, .open>.dropdown-toggle.btn-sky {
+color: #fff;
+background-color: #29b6d8;
+border-bottom:2px solid #2192ad;
+outline: none;
+}
+
+.btn-sky:active, .btn-sky.active {
+color: #fff;
+background-color: #0a97b9;
+border-top:2px solid #087994;
+outline-offset: none;
+margin-top: 2px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: none;
+    outline-offset: 0px;
+}
+
+a {
+color:#000;
+font-weight:bold;
+}
+a:hover {text-decoration:none; color:#fff;}
+
+/* --------------------------------------------------
+:: Login Section Modal
+-------------------------------------------------- */
+#login {
+    padding-top: 50px
+}
+#login .form-wrap {
+    width: 50%;
+    margin: 0 auto;
+}
+#login h1 {
+    color: #1fa67b;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+#login .form-group {
+    margin-bottom: 25px;
+}
+#login .checkbox {
+    margin-bottom: 20px;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#login .checkbox.show:before {
+    content: '\e013';
+    color: #1fa67b;
+    font-size: 17px;
+    margin: 1px 0 0 3px;
+    position: absolute;
+    pointer-events: none;
+    font-family: 'Glyphicons Halflings';
+}
+#login .checkbox .character-checkbox {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    display: inline-block;
+}
+#login .checkbox .label {
+    color: #6d6d6d;
+    font-size: 13px;
+    font-weight: bold;
+}
+#login .forget {
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    color:#1fa67b;
+}
+#login input {
+    font-weight:bold;
+}
+
+.forget-modal h4{
+ color: #1fa67b;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 960px) {
+
+body {
+  overflow: auto;
+}
+
+}
+
+
+/*--------------Dashboard Circles----------------------*/
+
+
+.circle {
+  margin: 36px;
+  display: inline-block;
+  padding: 16px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #1d2087;
+}
+
+.circle::before,
+.circle::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+.circle,
+.circle::before,
+.circle::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.circle {
+  position: relative;
+  z-index: 2;
+  background-color: #fcfcfc;
+  border: 2px solid #5c5eae;
+  color: #5c5eae;
+  line-height: 50px;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.circle:hover {
+  color: #fff;
+}
+.circle::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+}
+.circle:hover::after {
+  background: #5c5eae;
+  border-radius: 50%;
+  -webkit-transform: scale(.9);
+  transform: scale(.9);
+}
+
+.circle a {
+  text-decoration: none;
+  color: #1d2087;
+}
+
+.circle a:hover {
+  text-decoration: none;
+  color: #fcfcfc;	
+}
+
+.circle h2 {
+  font-size: 60px;
+  line-height: 100px;
+  height:100%;
+}
+.circle h4 {
+  font-size: 35px;
+  line-height: 40px;
+  height:100%;
+}
+
+.circle h3{
+  line-height: 100%;
+  height:100%;
+  font-weight:bold;
+}
+.saas{
+  width: 145px;
+  height: 145px;
+}
+
+
+.items label.btn-default{background-color:#fff;color:#000}
+.items label.btn-default.active{background-color:#fff;color:#008bf8; border: 1px solid #008bf8; font-weight:bold;}
+.items label.btn-default{
+border:1px solid #efefef; 
+box-shadow:2px 2px 8px 0 #ccc;
+padding-top:15px;
+}
+.items label .bizcontent{width:100%;}
+.items label .logo{width:50px;height:50px;margin-bottom:10px;}
+.items .btn-group{width:100%}
+
+

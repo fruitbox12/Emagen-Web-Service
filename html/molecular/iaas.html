@@ -1,0 +1,242 @@
+<html>
+<head>
+<title>Welcome to Cloud Apache Server(VM)</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <script type='text/javascript' src='js/jquery-3.2.1.min.js'></script>	
+  
+  <script type='text/javascript' src='js/bootstrap.min.js'></script>
+  <script type='text/javascript' src='js/jquery.particleground.js'></script>
+  <script type='text/javascript' src='js/particles.js'></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+
+<body>
+	 <nav class="navbar navbar-default navbar-static-top">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="dashboard.html">MolecularC Dashboard</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li><a href="saas.html">SaaS <span class="sr-only">(current)</span></a></li>
+			<li class="dropdown">
+			  <a href="staas.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">StaaS<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+			    <li><a href="object-newfs.html">New Fixed Storage</a></li>
+			    <li><a href="object-newbs.html">New Bulk Storage</a></li>
+			    <li><a href="object-newextes.html">Extend Existing Storage</a></li>
+			  </ul>
+			</li>
+			<li class="active"><a href="iaas.html">IaaS</a></li>
+			<li><a href="paas.html">PaaS</a></li>
+		</ul>
+      		<ul class="nav navbar-nav navbar-right"> 
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="welcome-msg"></a>
+			  <ul class="dropdown-menu">
+			    <li><a href="" id="logout">Logout</a></li>
+			  </ul>
+			</li>
+		</ul>
+       	    </div>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+<div id="wrapper">
+ <div id="particles">
+  <div id="intro">
+	<div class="row" id="content">
+		<h3>Create your Atom!</h3>
+			<ul class="nav nav-pills nav-justified thumbnail">
+			  <li class="active" id="tab1li"><a href="#tab_a" data-toggle="tab">Choose your Image</a></li>
+			  <li id="tab2li"><a href="#tab_b" data-toggle="tab">Choose Size</a></li>
+			  <li id="tab3li"><a href="#tab_c" data-toggle="tab">Set Atom Name</a></li>
+			  <li id="tab4li"><a href="#tab_d" data-toggle="tab" id="tab_d_head" style="display:none">Generating Atom</a></li>
+			</ul>
+			<form id="create-atom-form">
+			<div class="tab-content">
+				<div class="tab-pane active" id="tab_a">
+				    <h4>Choose your Operating System,which you want to be installed in your Atom</h4>
+				    <div class="items">
+					<div class="info-block block-info clearfix">
+					   <div data-toggle="buttons" class="btn-group col-md-offset-1">
+						  <label class="btn btn-default col-md-2">
+						        <div class="bizcontent">
+						            <input type="radio" name="os" autocomplete="off" value="ubuntu">
+							    <img src="images/os/ubuntu.svg" class="logo"></img>
+						            <p>Ubuntu</p>
+							    <hr>
+							    16.04.2 x64
+						        </div>
+						    </label>
+						    <label class="btn btn-default col-md-2">
+						        <div class="bizcontent">
+						            <input type="radio" name="os" autocomplete="off" value="centos">
+							    <img src="images/os/centos.svg" class="logo"></img>
+						            <p>CentOS</p>
+							    <hr>
+							    16.04.2 x64
+						        </div>
+						    </label>
+					            <label class="btn btn-default col-md-2">
+						        <div class="bizcontent">
+						            <input type="radio" name="os" autocomplete="off" value="redhat">
+							    <img src="images/os/redhat.svg" class="logo"></img>
+						            <p>Redhat</p>
+							    <hr>
+							    16.04.2 x64
+						        </div>
+						    </label>
+						    <label class="btn btn-default col-md-2">
+						        <div class="bizcontent">
+						            <input type="radio" name="os" autocomplete="off" value="kali">
+							    <img src="images/os/kali.svg" class="logo"></img>
+						            <p>Kali</p>
+							    <hr>
+							    16.04.2 x64
+						        </div>
+						    </label>
+						    <label class="btn btn-default col-md-2">
+						        <div class="bizcontent">
+						            <input type="radio" name="os" autocomplete="off" value="windows">
+							    <img src="images/os/windows.svg" class="logo"></img>
+						            <p>Windows</p>
+							    <hr>
+							    Windows 10
+						        </div>
+						    </label> 
+					   </div>
+					</div>
+			 	    </div>
+				    <br>
+				    <a class="btn btn-primary btnNext">Next</a>
+				</div>
+				<div class="tab-pane" id="tab_b">
+				    <h4>Choose your group accordingly!</h4>
+				    <div class="items">
+					<div class="info-block block-info clearfix">
+					   <div data-toggle="buttons" class="btn-group col-md-offset-1">
+						   <label class="btn btn-default col-md-2">
+						        <div class="bizcontent">
+						            <input type="radio" name="grp" autocomplete="off" value="grp1">
+							    Group 1
+							    <hr>
+							    <h4>512 MB RAM
+							    <br>
+							    1 CPU
+							    <br>
+							    2GB Disk Size</h4>
+						        </div>
+						    </label>
+						    <label class="btn btn-default col-md-2">
+						        <div class="bizcontent">
+						            <input type="radio" name="grp" autocomplete="off" value="grp2">
+							    Group 2
+							    <hr>
+							    <h4>1GB RAM
+							    <br>
+							    1 CPU
+							    <br>
+							    2GB Disk Size</h4>
+						        </div>
+						    </label>
+					            <label class="btn btn-default col-md-2">
+						        <div class="bizcontent">
+						            <input type="radio" name="grp" autocomplete="off" value="grp3">
+							    Group 3
+							    <hr>
+							    <h4>1GB RAM
+							    <br>
+							    2 CPU
+							    <br>
+							    5GB Disk Size</h4>
+						        </div>
+						    </label>
+						    <label class="btn btn-default col-md-2">
+						        <div class="bizcontent">
+						            <input type="radio" name="grp" autocomplete="off" value="grp4">
+							    Group 5
+							    <hr>
+							    <h4>1GB RAM
+							    <br>
+							    2 CPU
+							    <br>
+							    10GB Disk Size</h4>
+						        </div>
+						    </label> 
+					   </div>
+					</div>
+			 	    </div>				    
+				    <br>
+				    <a class="btn btn-primary btnPrevious" >Previous</a>
+				    <a class="btn btn-primary btnNext" >Next</a>
+				</div>
+				<div class="tab-pane" id="tab_c">
+				    <h4>Give name to your Atom</h4>
+				    <label>Atom Name</label>
+				    <input type="text" id="atomname" placeholder="Enter your Atom name" required>
+				    <a class="btn btn-primary btnPrevious" >Previous</a>
+				    <a class="btn btn-primary btnNext" >Next</a>
+				    <button type="submit" class="btn btn-primary" id="submit-atom">Submit</button>
+					<br><br>
+					<span id="i-status"></span>
+				</div>
+				<div class="tab-pane" id="tab_d" >
+				    <h4>Generating your atom</h4>
+				    <label>
+				    <div class="loader"></div>
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+					<polyline class="check-success" fill="none" stroke="#02a9ea" stroke-width="10" stroke-miterlimit="20" points="15,60 40,80 85,20" />
+					</svg>
+
+				    </label>
+				
+				    <br>
+				</div>
+			</div><!-- tab content -->
+			</form>
+	</div>
+  </div>
+ </div>
+		  
+</div>
+
+</body>
+<script>
+$(document).ready(function(){
+    $('#logout').click(function(e) {
+        e.preventDefault();
+	sessionStorage.clear();
+	window.location="/index.html";
+    });
+
+$('.btnNext').click(function(){
+  $('.nav-pills > .active').next('li').find('a').trigger('click');
+});
+
+  $('.btnPrevious').click(function(){
+  $('.nav-pills> .active').prev('li').find('a').trigger('click');
+});
+
+ });
+
+
+</script>
+
+  <script type="text/javascript" src="js/myajax.js"></script>
+</html>
+
