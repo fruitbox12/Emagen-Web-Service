@@ -1,0 +1,2 @@
+# Emagen-Web-Service
+Cloud computing, to put it simply, “means internet computing” is the on-demand delivery of compute power, database storage, applications,We will provides a lot of web services like Software as a service, Platform as a service and Infrastructure as a service for the user. User can access database resources via the internet from anywhere for as long as they need, without worrying about any maintenance or management of actual resource.
